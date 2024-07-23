@@ -1,18 +1,18 @@
 #choosing the base image as the build stage:
-FROM node:14-alpine 
+#FROM node:8-alpine 
 
 #choosing working directory for the application:
-WORKDIR /app
+#WORKDIR /app
 
 #copying the package.json file to app directory and installing packages:
-COPY package.json .
-RUN npm install
+#COPY package.json .
+#RUN npm install
 
 #copying the rest of application code to the working directory:
-COPY . .
+#COPY . .
 
 #building the application:
-RUN npm run build 
+#RUN npm run build 
 
-EXPOSE 3000
-CMD ["npm", "start"]
+#EXPOSE 3000
+#CMD ["npm", "start"]
