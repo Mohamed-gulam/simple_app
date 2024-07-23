@@ -1,0 +1,22 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "mohamedgulam/react:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 3000,
+      "HostPort": 80
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "React",
+      "image": "mohamedgulam/react:latest",
+      "essential": true,
+      "memory": 128,
+      "cpu": 256
+    }
+  ]
+}
